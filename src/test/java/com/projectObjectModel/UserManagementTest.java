@@ -28,31 +28,34 @@ public class UserManagementTest  extends BaseClass {
   
   
   @Test(priority=2)
-  public void searchRecordByUserName() 
+  public void searchRecordByUserName() throws InterruptedException 
   
   {
 	  adp=new AdminPage(driver);
     int count=  adp.searchByUserName("Admin");
     System.out.println("Total record found: " +count);
+    Thread.sleep(3000);
    driver.navigate().refresh();
 }
   
   @Test(priority=3)
-  public void searchRecordByUserRole() 
+  public void searchRecordByUserRole() throws InterruptedException 
   
   {
 	  adp=new AdminPage(driver);
     int count=  adp.searchByRole("Admin");
     System.out.println("Total record found: " +count);
+  Thread.sleep(3000);
    driver.navigate().refresh();
 }
   
   @Test(priority=4)
-  public void searchRecordByUserStatus() 
+  public void searchRecordByUserStatus() throws InterruptedException 
   
   {
 	  adp=new AdminPage(driver);
     int count=  adp.searchByStatus("Enabled");
+  Thread.sleep(3000);
     System.out.println("Total record found: " +count);
   
 }

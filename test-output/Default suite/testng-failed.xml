@@ -5,8 +5,8 @@
     <classes>
       <class name="com.projectObjectModel.UserManagementTest">
         <methods>
-          <include name="searchRecordByUserStatus"/>
           <include name="setUp"/>
+          <include name="searchRecordByUserRole"/>
         </methods>
       </class> <!-- com.projectObjectModel.UserManagementTest -->
     </classes>
